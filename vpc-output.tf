@@ -18,5 +18,5 @@ output "nat_public_ips" {
 }
 
 output "azs" {
-  default = module.vpc.azs
+  value = module.vpc.azs
 }
