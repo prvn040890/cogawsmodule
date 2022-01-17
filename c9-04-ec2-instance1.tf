@@ -1,4 +1,4 @@
-module "ec2_private_app1" {
+module "ec2_private_app2" {
   source  = "terraform-aws-modules/ec2-instance/aws"
   version = "2.17.0"
   name    = "${var.environment}-vm"
@@ -13,7 +13,7 @@ module "ec2_private_app1" {
   ]
   instance_count         = var.private_instance_count
   vpc_security_group_ids = [module.private_sg.this_security_group_id]
-  user_data              = file("${path.module}/app1-install.sh")
+  user_data              = file("${path.module}/app2-install.sh")
   tags                   = local.common_tags
 
 }

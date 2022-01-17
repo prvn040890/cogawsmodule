@@ -9,5 +9,5 @@ variable "instance_keypair" {
 
 variable "private_instance_count" {
   type    = number
-  default = 1
+  default = 2
 }
