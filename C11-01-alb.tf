@@ -9,5 +9,5 @@ resource "aws_lb" "web_servers" {
       module.vpc.public_subnets[1]
   ]
 
-  enable_deletion_protection = true
+  enable_deletion_protection = false
 }
